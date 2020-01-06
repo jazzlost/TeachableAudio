@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hello Wwise</title>
+  <script src="p5.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <meta charset="utf-8">
+
+  <script src="WAAPI/node_modules/autobahn-browser/autobahn.min.js"></script>
+  <script src="WAAPI/WwiseAuthoringAPI/js/waapi.js"></script>
+
+  <script src="Leap/leap-1.0.0.js"></script>
+
+
+
+</head>
+
+<body onload="onBodyLoad()" style="background-color: #10aeec;">
+  <script src="WAAPI/index.js"></script>
+  <script src="Leap/sensor.js"></script>
+
+  <div style="background-color: #652502;">
+    <img src="Resourse/Logo.png" ; height=150px; hspace="550" ; />
+    <div id="message" style="width: max-content; margin-left: 1000px;font-size: 20px;">
+      No Wwise connected.
+    </div>
+    <div id="projectName" style="margin-left: 1000px;font-size: 20px;">
+      No Project Open.
+    </div>
+    <div style="margin-top: 200px;">
+      <script src="sketch.js"></script>
+    </div>
+  </div>
+  <script>
+    function openProject() {
+      document.getElementById('open').click();
+    }
+  </script>
+
+  <br>
+  <input type="button" value="Open Project" onclick="openProject()" />
+  <input type="file" name="filename" id="open" style="display:none;" />
+
+  <br>
+  </br>
+
+
+</body>
+
+</html>

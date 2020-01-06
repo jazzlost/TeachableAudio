@@ -1,0 +1,10 @@
+{
+  "modelURL": "https://teachablemachine.withgoogle.com/models/yq4hpdce/",
+  "index": 3,
+  "labelArray": [
+    "One",
+    "Two",
+    "Three"
+  ],
+  "eventArray": []
+}
